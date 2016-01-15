@@ -35,25 +35,25 @@ $(function(){
           $(count += 5);
         }
 
-        if('#lifePath' === "flipp") {
+        if(lifePath === "flipp") {
           $(count += 1);
-        } else if('#lifePath' === "summer") {
+        } else if(lifePath === "summer") {
           $(count += 2);
-        } else if ('#lifePath' === "unity") {
+        } else if (lifePath === "unity") {
           $(count += 3);
-        } else if ('#lifePath' === "slippery") {
+        } else if (lifePath === "slippery") {
           $(count += 4);
           } else {
           $(count += 5);
         }
 
-        if('#money' === "flipp") {
+        if(money === "flipp") {
           $(count += 1);
-        } else if('#money' === "summer") {
+        } else if(money === "summer") {
           $(count += 2);
-        } else if ('#money' === "unity") {
+        } else if (money === "unity") {
           $(count += 3);
-        } else if ('#money' === "slippery") {
+        } else if (money === "slippery") {
           $(count += 4);
           } else {
           $(count += 5);
@@ -64,11 +64,11 @@ $(function(){
 
         if(count <= 4) {
           $("#flipp").show();
-        } else if (count < 8 && count > 4) {
+        } else if (count < 8) {
           $("#summer").show();
-        } else if (count >= 8 && count < 12) {
+        } else if (count >= 8) {
           $('#unity').show();
-        } else if (count < 16 && count >=12) {
+        } else if (count < 16) {
           $('#slippery').show();
         } else {
           $("#morty").show();
