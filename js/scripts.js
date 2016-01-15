@@ -4,12 +4,12 @@
 
 $(function(){
   var count = 0;
-  var science = $('select#scienceExperiment').val();
-  var universe = $('select#universe').val();
-  var conflict = $('select#conflict').val();
-  var lifePath = $('select#lifePath').val();
-  var money = $('select#money').val();
   $('#submit').click(function(event){
+    var science = $('select#scienceExperiment').val();
+    var universe = $('select#universe').val();
+    var conflict = $('select#conflict').val();
+    var lifePath = $('select#lifePath').val();
+    var money = $('select#money').val();
 
         if(science === "yes") {
           $(count += 2);
@@ -59,16 +59,16 @@ $(function(){
           $(count += 5);
         }
 
-        alert("Your count is: " + count);
+        alert("Your money is: " + money);
         // $('#flipp').show();
-
+        console.log("hello and your count is " + count);
         if(count <= 4) {
           $("#flipp").show();
-        } else if (count < 8) {
+        } else if (count < 8 && count > 4) {
           $("#summer").show();
-        } else if (count >= 8) {
+        } else if (count >= 8 && count < 12) {
           $('#unity').show();
-        } else if (count < 16) {
+        } else if (count < 16 && count >= 12) {
           $('#slippery').show();
         } else {
           $("#morty").show();
