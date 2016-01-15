@@ -59,9 +59,9 @@ $(function(){
           $(count += 5);
         }
 
-        alert("Your money is: " + money);
+        // alert("Your money is: " + money);
         // $('#flipp').show();
-        console.log("hello and your count is " + count);
+        // console.log("hello and your count is " + count);
         if(count <= 4) {
           $("#flipp").show();
         } else if (count < 8 && count > 4) {
